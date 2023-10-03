@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport " content="width=device-width, intial-scale=1.0">
+    <title>FreshtoHome</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="https://static.freshtohome.com/media/css_secure/7a7f804fa4f025d2e058943818480420.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="https://static.freshtohome.com/media/css_secure/4c5648a21c7434684442d012fdc78fe8.css" media="print" />
+</head>
+    <body>
+     <div class="topnav">
+        <a class="active" href="#home"><i class="fa fa-fw fa-home"></i> Home</a> 
+        <a href="#FRUITS"><i class="bx bxs-basket"></i>FRUITS</a>
+        <a href="#VEGETABLES"><i class="bx bxs-basket"></i>VEGETABLES</a>
+        <a href="signup.htm" style="float:right"><i class="fa fa-fw fa-user"></i>SIGN UP</a> 
+        <a href="login.htm" style="float:right"><i class="bx bxs-basket"></i>CART</a>
+        <a href="#"  style="float:right"><i class="fa fa-fw fa-envelope"></i>MY ORDERS</a>
+     </div><br>
+     <div class="slideshow-container">
+
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 3</div>
+          <img src="pic1.webp" width=100%>
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 3</div>
+          <img src="pic3.webp" width="100%">
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 3</div>
+          <img src="pic2.webp" width="100%">
+        </div>
+ 
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+        
+     </div>
+     <br>
+      <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span> 
+        <span class="dot" onclick="currentSlide(2)"></span> 
+        <span class="dot" onclick="currentSlide(3)"></span> 
+      </div>
+      
+      <script>
+      let slideIndex = 1;
+      showSlides(slideIndex);
+      
+      function plusSlides(n) {
+        showSlides(slideIndex += n);
+      }
+      
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
+      
+      function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {slideIndex = 1;}    
+        if (n < 1) {slideIndex = slides.length;}
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";  
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";  
+        dots[slideIndex-1].className += " active";
+      }
+   
+      </script>
+      <img src="pic5.webp" alt="freshoffers" width="100%"><br><br>
+      <div id="FRUITS">
+      <center>
+        <h2 style="color:blue; font-size:50px;"><i>FRESH FRUITS - DIRECTLY FROM THE AGRICULTURAL FARMS</i></h2><br>
+      </center>
+      <style>
+         table, td, th {  
+          border: 1px solid rgb(0, 0, 0);
+          text-align: center;
+         }
+
+         table {
+          border-collapse: collapse;
+          width: 100%;
+         }
+
+         th, td {
+          padding: 15px;
+         }
+
+         dd, dl{
+            font-size: large;
+            font-family: Courier;
+            text-align:center justify;
+         }
+         button {
+            font-size:12px;
+            font-stretch:expanded;
+            font-family:Verdana;
+            color:rgb(0, 0, 0);
+            background-color: lightblue;
+            padding: 5px;
+            border: 2px solid rgb(0, 0, 0);
+         }
+         
+      </style>
+     
+      <table width="100%" >
+        <tr>
+          <th style="background-color: rgb(156, 230, 106);"><img src="Apple.png" width="300px" height="300px">
+            <dl style="color:rgb(0, 0, 0);">
+                <button href="#" style="font-size:large;"><b>HIMACHAL APPLES</b></button>
+                <dd><b>2Kg - Rs.300</b></dd>
+            </dl>
+          </th>
+          <th style="background-color: rgb(149, 207, 244);"><img src="Mango.png" width="300px" height="300px">
+            <dl style="color:rgb(0, 0, 0);">
+              <button href="#" style="font-size:large;"><b> SALEM MANGO</b></button> 
+                <dd> <b>2Kg - Rs.100</b></dd>
+            </dl>
+          </th>
+          <th style="background-color: rgb(156, 230, 106);"><img src="Orange.png"  width="300px" height="300px"> 
+            <dl style="color:rgb(0, 0, 0) ;">
+              <button href="#" style="font-size:large;"><b>TRISSUR ORANGE</b></button> 
+                <dd><b>3kg - Rs.150</b></dd>
+          </th>
+          <th style="background-color: rgb(87, 226, 203);"><img src="strawberry.png"  width="300px" height="300px"> 
+            <dl style="color:rgb(0, 0, 0) ;">
+              <button href="#" style="font-size:large;"><b>HIMACHAL STRAWBERRIES</b></button> 
+                <dd><b>2Box- Rs.250</b></dd>
+          </th> 
+        </tr>
+        <br>
+        <tr>
+          <th style="background-color: rgb(156, 230, 106);"><img src="BLUEBERRY.png" width="300px" height="300px">
+            <dl style="color:rgb(0, 0, 0);">
+                <button href="#" style="font-size:large;"><b>HIMACHAL BLUEBERRIES</b></button>
+                <dd><b>2Kg - Rs.300</b></dd>
+            </dl>
+          </th>
+          <th style="background-color: rgb(149, 207, 244);"><img src="BANANA.png" width="300px" height="300px">
+            <dl style="color:rgb(0, 0, 0);">
+              <button href="#" style="font-size:large;"><b> ANDRA BANANA</b></button> 
+                <dd> <b>2DOZENS - Rs.100</b></dd>
+            </dl>
+          </th>
+          <th style="background-color: rgb(156, 230, 106);"><img src="DRAGONFRUIT.png"  width="300px" height="300px"> 
+            <dl style="color:rgb(0, 0, 0) ;">
+              <button href="#" style="font-size:large;"><b>GUJARAT DRAGONFRUIT</b></button> 
+                <dd><b>1kg - Rs.150</b></dd>
+          </th>
+          <th style="background-color: rgb(87, 226, 203);"><img src="FIG.png"  width="300px" height="300px"> 
+            <dl style="color:rgb(0, 0, 0) ;">
+              <button href="#" style="font-size:large;"><b>KASHMIR FIG</b></button> 
+                <dd><b>2Box- Rs.200</b></dd>
+          </th> 
+        </tr>
+      </table>
+      </div>
+      <br><br>
+      <div id="VEGETABLES">
+      <center>
+        <h2 style="color:blue; font-size:50px;"><i>FRESH VEGETABLES - DIRECTLY FROM THE AGRICULTURAL FARMS</i></h2><br>
+      </center>
+       <table width="100%" >
+        <tr>
+          <th style="background-color: rgb(156, 230, 106);"><img src="Cauliflower.png" width="300px" height="300px">
+            <dl style="color:rgb(0, 0, 0);">
+                <button href="#" style="font-size:large;"><b>MOONAR CAULIFLOWER</b></button>
+                <dd><b>2Pieces - Rs.100</b></dd>
+            </dl>
+          </th>
+          <th style="background-color: rgb(149, 207, 244);"><img src="ONION.png" width="300px" height="300px">
+            <dl style="color:rgb(0, 0, 0);">
+              <button href="#" style="font-size:large;"><b>KARNATAKA ONION</b></button> 
+                <dd> <b>3Kg - Rs.100</b></dd>
+            </dl>
+          </th>
+          <th style="background-color: rgb(156, 230, 106);"><img src="BEANS.png"  width="300px" height="300px"> 
+            <dl style="color:rgb(0, 0, 0) ;">
+              <button href="#" style="font-size:large;"><b>OOTY BEANS</b></button> 
+                <dd><b>3kg - Rs.100</b></dd>
+          </th>
+          <th style="background-color: rgb(87, 226, 203);"><img src="BEETROOT.png"  width="300px" height="300px"> 
+            <dl style="color:rgb(0, 0, 0) ;"></b></button> 
+               <button href="#" style="font-size:large;"><b>BANGALORE BEETROOT</b></button>
+                <dd><b>3Kg- Rs.250</b></dd>
+          </th>
+        </tr>
+        <tr>
+          <th style="background-color: rgb(156, 230, 106);"><img src="TOMATO.png" width="300px" height="300px">
+            <dl style="color:rgb(0, 0, 0);">
+                <button href="#" style="font-size:large;"><b>KERALA TOMATOS</b></button>
+                <dd><b>2KG - Rs.80</b></dd>
+            </dl>
+          </th>
+          <th style="background-color: rgb(149, 207, 244);"><img src="POTATOS.png" width="300px" height="300px">
+            <dl style="color:rgb(0, 0, 0);">
+              <button href="#" style="font-size:large;"><b>OOTY POTATOS</b></button> 
+                <dd> <b>2Kg - Rs.150</b></dd>
+            </dl>ot
+          </th>
+          <th style="background-color: rgb(156, 230, 106);"><img src="carrot.png"  width="300px" height="300px"> 
+            <dl style="color:rgb(0, 0, 0) ;">
+              <button href="#" style="font-size:large;"><b>OOTY CARROT</b></button> 
+                <dd><b>3kg - Rs.100</b></dd>
+          </th>
+          <th style="background-color: rgb(87, 226, 203);"><img src="BRINJAL.png"  width="300px" height="300px"> 
+            <dl style="color:rgb(0, 0, 0) ;"></b></button> 
+               <button href="#" style="font-size:large;"><b>BANGALORE BRINJALS</b></button>
+                <dd><b>3Kg- Rs.250</b></dd>
+          </th>
+        </tr>
+        </table>  
+      </div>
+
+
+
+
+    
+
+    </body>
+</html>

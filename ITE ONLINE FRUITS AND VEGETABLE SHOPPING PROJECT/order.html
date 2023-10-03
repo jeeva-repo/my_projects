@@ -1,0 +1,120 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Create two equal columns that floats next to each other */
+.column1{
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height: 100%;
+  border: 2px solid black;
+  background-image:url(bg6.jpg);
+  background-size:cover;
+  background-repeat: no-repeat;
+  font-size:large;
+
+}
+label{
+    font-weight:bolder;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: italic;
+}
+.column2{
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height: 100%;
+  border: 2px solid black;
+  background-image:url(bg4.jpeg);
+  background-size:cover;
+  background-repeat: no-repeat;
+  font-size:large;
+
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+h2,h3,p{
+    font-size:large;
+    font-weight: bold;
+    font-family:" Alike Angular";
+}
+</style>
+</head>
+<body>
+    <script>
+        function myFunction() {
+          alert("CONGRAGULATIONS YOUR ORDER PLACED SUCCESSFULLY!!!");
+        }
+      </script>
+<form name="order" action="Homepage.html">
+<div class="row">
+  <div class="column1" style="background-color:white;">
+    <center><h2><i>FRUITS ORDERING</i></h2></center><br>
+    <input type="checkbox" name="fruits" value="Himachal Apples" id="fr1">
+    <label for="fr1">HIMACHAL APPLES</label><br>
+    <pre>   Enter the Quantity: <input type=number name="fr1q" size="30px" ></pre><br>
+    <input type="checkbox" name="fruits" value="Salem Mango" id="fr2">
+    <label for="fr2">SALEM MANGOES</label><br>
+    <pre>   Enter the Quantity: <input type=number name="fr2q" size="30px"></pre><br>
+    <input type="checkbox" name="fruits" value="Trissur Orange" id="fr3">
+    <label for="fr3">TRISSUR ORANGE</label><br>
+    <pre>   Enter the Quantity: <input type=number name="fr3q" size="30px"></pre><br>
+    <input type="checkbox" name="fruits" value="Himachal Strawberries" id="fr4">
+    <label for="fr4">HIMACHAL STRAWBERRY</label><br>
+    <pre>   Enter the Quantity: <input type=number name="fr4q" size="30px"></pre><br>
+    <input type="checkbox" name="fruits" value="Kashmir Fig" id="fr5">
+    <label for="fr5">KASHMIR FIG</label><br>
+    <pre>   Enter the Quantity: <input type=number name="fr5q" size="30px"></pre><br>
+
+    <p>
+        <ul>
+            <li>CASH ON DELIVERY AVAILABLE</li>
+            <li>FREE HOME DELIVERY FOR PURCHASING ABOVE Rs.3000</li>
+            <li>PRODUCTS WILL BE DELIVERED WITHIN 2 DAYS</li>
+            <li>ALL FRUITS ARE FRESHLY FROM AGRICULTURAL FORMS</li>
+        </ul>
+    </p>
+  </div>
+  <div class="column2" style="background-color:white;">
+    <center><h2><i>VEGETABLES ORDERING</i></h2></center><br>
+    <input type="checkbox" name="vegetables" value="Karnataka Onion" id="vg1">
+    <label for="vg1">KARNATAKA ONIONS </label><br>
+    <pre>   Enter the Quantity: <input type=number name="vg1q" size="30px" ></pre><br>
+    <input type="checkbox" name="vegetables" value="Ooty Beans" id="vg2">
+    <label for="vg2">OOTY BEANS </label><br>
+    <pre>   Enter the Quantity: <input type=number name="vg2q" size="30px"></pre><br>
+    <input type="checkbox" name="vegetables" value="Bangalore Beetroot" id="vg3">
+    <label for="vg3">BANGALORE BEETROOT </label><br>
+    <pre>   Enter the Quantity: <input type=number name="vg3q" size="30px"></pre><br>
+    <input type="checkbox" name="vegetables" value="Ooty Carrot" id="vg4">
+    <label for="vg4">OOTY CARROT </label><br>
+    <pre>   Enter the Quantity: <input type=number name="vg4q" size="30px"></pre><br>
+    <input type="checkbox" name="vegetables" value="Bangalore Brinjals" id="vg5">
+    <label for="vg5">BANGALORE BRINJALS </label><br>
+    <pre>   Enter the Quantity: <input type=number name="vg5q" size="30px"></pre><br>
+    <b><i> SELECT THE PAYMENT METHOD:</i></b><br>
+    <input type="radio" name="payment" value="Internet banking" id="pay1">
+    <label for="pay1">INTERNET BANKING</label> <br>
+    <input type="radio" name="payment" value="Credit card anking" id="pay2">
+    <label for="pay2">CREDIT CARD BANKING</label><BR>
+    <input type="radio" name="payment" value="Cash on delivery" id="pay3" >
+    <label for="pay3"> CASH ON DELIVERY</label><br><br>
+
+    <input type="submit" name="submit" onclick="myFunction()" value="Place your Order">
+
+  </div>
+
+</div>
+</form>
+</body>
+</html>
